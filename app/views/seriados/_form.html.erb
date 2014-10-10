@@ -1,0 +1,25 @@
+<%= form_for(@seriado) do |f| %>
+  <% if @seriado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@seriado.errors.count, "error") %> prohibited this seriado from being saved:</h2>
+
+      <ul>
+      <% @seriado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :personagens %><br>
+    <%= f.text_field :personagens %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

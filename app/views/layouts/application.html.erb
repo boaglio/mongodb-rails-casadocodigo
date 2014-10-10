@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MongodbRailsCasadocodigo</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <br/>
+ <div class="container">
+  <div class="class="btn btn-primary btn-lg" role="alert"></div>
+  <%=image_tag("tv.png", :border=>0) %>  
+  
+  <h1>Meus seriados preferidos</h1>
+  <br/>
+ 
+<%= yield %>
+
+</body>
+</html>

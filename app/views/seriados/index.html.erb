@@ -1,0 +1,27 @@
+<h1>Listing seriados</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Personagens</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seriados.each do |seriado| %>
+      <tr>
+        <td><%= seriado.nome %></td>
+        <td><%= seriado.personagens %></td>
+        <td><%= link_to 'Show', seriado %></td>
+        <td><%= link_to 'Edit', edit_seriado_path(seriado) %></td>
+        <td><%= link_to 'Destroy', seriado, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Seriado', new_seriado_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @seriado.nome %>
+</p>
+
+<p>
+  <strong>Personagens:</strong>
+  <%= @seriado.personagens %>
+</p>
+
+<%= link_to 'Edit', edit_seriado_path(@seriado) %> |
+<%= link_to 'Back', seriados_path %>
