@@ -1,5 +1,5 @@
  
-MongoDB + Rails 4 + Bootstrap
+MongoDB + Rails 6 + Bootstrap
 ======================================
 
 * Database.....: *mongodb_rails_casadocodigo_development*
@@ -11,7 +11,7 @@ MongoDB + Rails 4 + Bootstrap
 db.seriados.findOne()
  
 {
-    "_id" : ObjectId("543736d56361735b1d000000"),
+    "_id" : "1",
     "nome" : "Chaves",
     "personagens" : "Seu Barriga, Chaves"
 }
@@ -20,5 +20,9 @@ db.seriados.findOne()
 
 Para executar:
 
+
+```
+bundle install
 rails s
+```
 
